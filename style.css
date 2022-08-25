@@ -1,0 +1,255 @@
+.home_task_conteiner {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home_task_1_conteiner {
+    background-color: rgb(7, 176, 167);
+}
+.home_task_1_item {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    animation-name: for_ht_1;
+    animation-duration: 3s;
+    animation-timing-function:ease;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+}
+@keyframes for_ht_1 {
+    0% {
+        transform: rotate(0deg) scale(1);
+        border-radius: 0;
+    }
+    40% {
+        transform: rotate(180deg) scale(0.3);
+        border-radius: 50%;
+    }
+    60% {
+        transform: rotate(180deg) scale(0.3);
+        border-radius: 50%;
+    }
+    100%{
+        transform: rotate(360deg) scale(1);
+        border-radius: 0%;
+    }
+}
+
+.home_task_2_conteiner {
+    flex-direction:column;
+    gap: 30px;
+    background: linear-gradient(0deg, rgba(0, 0, 0 ,0.4), rgba(0, 0, 0 ,0))
+}
+.home_task_2_heading {
+    font-family: sans-serif;
+}
+.home_task_2_item_conteiner {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+}
+.home_task_2_item {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    opacity: 0.7;
+    animation-duration: 1s;
+    animation-timing-function:ease;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+}
+.item_white {
+    background-color: rgb(255, 255, 255);
+    animation-name: for_ht_2_white;
+}
+.item_red {
+    background-color: rgb(236, 21, 21);
+    animation-name: for_ht_2_red;
+}
+.item_orange {
+    background-color: rgb(216, 145, 13);
+    animation-name: for_ht_2_orange;
+}
+.item_yellow {
+    background-color: rgb(244, 244, 12);
+    animation-name: for_ht_2_yellow;
+}
+.item_blue {
+    background-color: rgb(52, 179, 239);
+    animation-name: for_ht_2_blue;
+}
+.item_green {
+    background-color: rgb(14, 230, 14);
+    animation-name: for_ht_2_green;
+}
+.item_violet {
+    background-color: rgb(142, 9, 142);
+    animation-name: for_ht_2_violet;
+}
+.item_black {
+    background-color: rgb(19, 15, 15);
+    animation-name: for_ht_2_black;
+}
+@keyframes for_ht_2_white {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 1px rgb(255, 255, 255, 0.4);
+    }
+    
+    100%{
+        transform: scale(1.1);
+        box-shadow: 0 0 0 8px rgb(255, 255, 255, 0);
+    }
+}
+@keyframes for_ht_2_orange {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 1px rgb(216, 145, 13, 0.4);
+    }
+    
+    100%{
+        transform: scale(1.1);
+        box-shadow: 0 0 0 8px rgb(216, 145, 13, 0);
+    }
+}
+@keyframes for_ht_2_red {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 1px rgb(236, 21, 21, 0.4);
+    }
+    
+    100%{
+        transform: scale(1.1);
+        box-shadow: 0 0 0 8px rgb(236, 21, 21, 0);
+    }
+}
+@keyframes for_ht_2_yellow {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 1px rgb(244, 244, 12, 0.4);
+    }
+    
+    100%{
+        transform: scale(1.1);
+        box-shadow: 0 0 0 8px rgb(244, 244, 12, 0);
+    }
+}
+@keyframes for_ht_2_blue {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 1px rgb(52, 179, 239, 0.4);
+    }
+    
+    100%{
+        transform: scale(1.1);
+        box-shadow: 0 0 0 8px rgb(52, 179, 239, 0);
+    }
+}
+@keyframes for_ht_2_green {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 1px rgb(14, 230, 14, 0.4);
+    }
+    
+    100%{
+        transform: scale(1.1);
+        box-shadow: 0 0 0 8px rgb(14, 230, 14, 0);
+    }
+}
+@keyframes for_ht_2_violet {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 1px rgb(142, 9, 142, 0.4);
+    }
+    
+    100%{
+        transform: scale(1.1);
+        box-shadow: 0 0 0 8px rgb(142, 9, 142, 0);
+    }
+}
+@keyframes for_ht_2_black {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 1px rgb(19, 15, 15, 0.4);
+    }
+    
+    100%{
+        transform: scale(1.1);
+        box-shadow: 0 0 0 8px rgb(19, 15, 15, 0);
+    }
+}
+
+.home_task_3_conteiner {
+    background: radial-gradient(rgb(58, 130, 174), rgba(36, 13, 164, 0.973));
+    position: relative;
+    z-index: -2;
+}
+.home_task_3_inner_conteiner {
+    transform: rotate(25deg);
+}
+.earth {
+    width: 300px; height: 300px;
+    border-radius: 50%; background: rgb(24, 24, 201);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    animation: index 6s infinite;
+}
+.moon_conteiner {
+    animation: updown 3s infinite ease-in-out alternate;
+    position: absolute;
+    top: calc(50% - 30px);
+    left:calc(50% - 230px);
+    transform: translateY(-50%) translateX(-50%);
+    z-index: 1;
+}
+.moon {
+    width: 50px; height: 50px;
+    border-radius: 50%; background: rgb(203, 231, 236);
+    animation: circle 6s infinite linear;
+}
+
+@keyframes circle { 
+    0% { 
+        transform: rotate(0deg) translateY(150px); 
+    }
+    25% { 
+        transform: rotate(-90deg) translateY(150px); 
+    }
+    50% { 
+        transform: rotate(-180deg) translateY(150px);
+    }
+    75% { 
+        transform: rotate(-270deg) translateY(150px);
+    }
+    100% { 
+        transform: rotate(-360deg) translateY(150px);
+    }
+}
+@keyframes updown {
+    0% { 
+        transform: translateX(0px);
+    }
+    100% { 
+        transform: translateX(400px);
+    }
+}
+@keyframes index { 
+    0% { 
+        z-index: 0;
+    }
+    25% { 
+        z-index: 0;
+    }
+    50% { 
+        z-index: 2;
+    }
+    100% { 
+        z-index: 2;
+    }
+}
+
+
